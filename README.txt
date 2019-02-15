@@ -6,16 +6,19 @@ const int echoPin = 3;
 long duration;
 int distance;
 Servo myServo;
-void setup() {
+void setup() 
+{
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 
   Serial.begin(9600);
   myServo.attach(9);
 }
-void loop() {
+void loop() 
+{
 
-  for (int i = 0; i <= 180; i++) {
+  for (int i = 0; i <= 180; i++) 
+  {
     myServo.write(i);
     delay(10);
     distance = calculateDistance();
@@ -25,7 +28,8 @@ void loop() {
     Serial.print(".");
   }
 
-  for (int i = 180; i > 0; i--) {
+  for (int i = 180; i > 0; i--) 
+  {
     myServo.write(i);
     delay(30);
     distance = calculateDistance();
@@ -37,7 +41,8 @@ void loop() {
 
 }
 
-int calculateDistance() {
+int calculateDistance() 
+{
 
   digitalWrite(trigPin, LOW);
   delayMicroseconds(10);
