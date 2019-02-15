@@ -1,6 +1,5 @@
 # Arduino-based-Radar-system
-#Code for Arduino uno
-
+*******Code for Arduino uno********
 #include <Servo.h>
 const int trigPin = 2;
 const int echoPin = 3;
