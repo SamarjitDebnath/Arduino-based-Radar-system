@@ -53,6 +53,7 @@ int calculateDistance()
   distance = duration * 0.034 / 2;
   return distance;
 }
+
 *******Code for Processing3.3.7*******
 import processing.serial.*; // imports library for serial communication
 import java.awt.event.KeyEvent; // imports library for reading the data from the serial port
